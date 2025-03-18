@@ -9,5 +9,5 @@ node index.js /path/to/file
 
 - Upload and delete file after finish
 ``` bash
-node index.js /path/to/file 
+node index.js /path/to/file -d
 ```
