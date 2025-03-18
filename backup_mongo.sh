@@ -20,6 +20,6 @@ echo "Uploading file to s3 bucket and cleanup up compressed archive"
 cd /home/upload-file-to-s3-cli
 node index.js $ARCHIVE_DIR/$BACKUP_FILE_NAME -d
 
-echo 'Backup complete!'
+echo "Backup complete!"
 
 
