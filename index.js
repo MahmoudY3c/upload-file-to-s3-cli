@@ -132,7 +132,7 @@ const uploadUnknownLengthStreamObject = (
     const upload = new Upload({
       client: s3, // Your S3 client instance
       params,
-      queueSize: 2, // Parallelism
+      queueSize: 5, // Parallelism
       // partSize: this.BytesConverter.KBToBytes(50), // 50KB part size to reduce chunk size
       ...(options.config || {}),
     });
