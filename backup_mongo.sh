@@ -17,7 +17,7 @@ echo "Dumping MongoDB $DB database to compressed archive"
 mongodump --db=$DB --archive=$ARCHIVE_DIR/$BACKUP_FILE_NAME --gzip -u $DB_USER_NAME -p $DB_PASSWORD  --authenticationDatabase admin
 
 echo "Uploading file to s3 bucket and cleanup up compressed archive"
-cd /home/upload-file-to-s3-cli
+cd $SCRIPT_PATH
 node index.js $ARCHIVE_DIR/$BACKUP_FILE_NAME -d
 
 echo "Backup complete!"
